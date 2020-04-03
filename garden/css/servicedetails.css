@@ -1,0 +1,73 @@
+.pub-detils {
+  padding: 95px 0px 100px;
+}
+.pub-detils .detils-left {
+  background-color: #f8f8f8;
+  margin-right: 20px;
+}
+.pub-detils .detils-right {
+}
+.detils-left ul {
+  padding: 30px 30px;
+}
+.detils-left ul li {
+  background: #fff;
+  padding: 10px 0;
+  margin-bottom: 10px;
+}
+.detils-left ul li a {
+  display: block;
+  font-size: 1.4rem;
+  color: #848484;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  line-height: 30px;
+  font-weight: 700;
+  padding-left: 20px;
+  transition: all 0.5s ease;
+}
+.detils-left ul li a span {
+  margin-right: 8px;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+.detils-left ul li a:hover {
+  color: #7aba1e;
+}
+.detils-left .active {
+  background-color: #7aba1e;
+}
+.detils-left .active a {
+  color: #fff;
+}
+.drc-text {
+  margin-top: 48px;
+}
+.drc-text .title {
+  margin-bottom: 20px;
+}
+.drc-text .title h4 {
+  font-weight: 700;
+  font-size: 20px;
+  color: #222222;
+}
+.text p {
+  color: #848484;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+}
+.text-two {
+  margin-top: 25px;
+}
+.text-down {
+  margin-top: 25px;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+.text-down .td-title {
+  font-weight: 700;
+  font-size: 20px;
+  color: #222222;
+  margin: 15px 0px 20px;
+}
