@@ -1,0 +1,50 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  background-image: url("../img/bg-4.png");
+  background-size: 100vw 100vh;
+}
+h1{
+  padding-top: .25rem;
+  font-size: .5rem;
+  line-height: 1.2;
+  color: aliceblue;
+}
+.warp{
+  width: 100vw;
+  height: 100vh;
+  text-align: center;
+}
+.left,.right{
+  width: 6rem;
+  height: 100vh;
+  float: left;
+}
+.mid{
+  width: 12rem;
+  height: 100vh;
+  float: left;
+}
+.left-items,.right-items{
+  width:95%;
+  height: 3.65rem;
+  background-color: rgba(111, 148, 226, 0.14);
+  margin: 0 auto;
+  margin-top: .5375rem;
+}
+.main-show{
+  margin: 0 auto;
+  width: 95%;
+  height: 1.8rem;
+}
+.main-map{
+  margin: 0 auto;
+  width:95%;
+  height: 10rem;
+  /* background-color: aliceblue; */
+  color: rgba(44, 49, 180, 0.472);
+}
+
