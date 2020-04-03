@@ -1,0 +1,91 @@
+.single-collection-wrap{
+  margin-bottom: 90px;
+}
+.col-one{
+  padding-right: 30px;
+}
+.col-two{
+  padding-left: 30px;
+}
+.margin-minus{
+  margin-top: -170px;
+}
+.col-7-right{
+  height: 682.85px;
+}
+.col-5-right{
+  height: 513.5px;
+}
+.img-out img{
+  display: block;
+  width: 100%;
+  position: relative;
+}
+.single-collection-wrap:hover .img-message{
+  opacity: 1;
+}
+.img-message{
+  position: absolute;
+  transform: translateY(-80%);
+  opacity: 0;
+  transition: all 0.3s linear;
+}
+.img-long-left{
+  top: 50%;
+  left: 30px;
+}
+.img-short-left{
+  top: 47%;
+  left: 30px;
+}
+.img-short-right{
+  top: 34%;
+  left:65px;
+}
+.img-long-right{
+  top: 30%;
+  left:65px;
+}
+h3{
+  line-height: 32px;
+}
+.img-message h3{
+  margin-bottom: 10px;
+  font-weight: 700;
+  font-size: 28px;
+  
+}
+.img-message h3 a{
+  text-decoration: none;
+  color: #333;
+}
+.btn-line{
+  padding: 8px 0 2px;
+  font-weight: 400;
+  color: #333;
+  position: relative;
+  font-size: 15px;
+  transition: .3s all linear;
+}
+.btn-line:before{
+  content: "";
+  position: absolute;
+  width:100%;
+  height: 1px;
+  transition: .3s all linear;
+  right: 0;
+  bottom: 0;
+  left: auto;
+  opacity: 1;
+  display: block;
+  background-color: #333;
+}
+.btn-line:hover::before{
+  width:50%;
+  height: 1px;
+}
+.btn-line:hover{
+  color: #FF7353;
+}
+
+

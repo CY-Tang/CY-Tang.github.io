@@ -1,0 +1,566 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+input{
+  outline: none;
+}
+p{
+  font-family: "myfont";
+}
+a{
+  font-family: "myfont";
+}
+@media(min-width:1200px){
+  .container{
+    max-width: 1140px;
+  }
+}
+@font-face{
+  font-family: "myfont";
+  src: url('../fonts/fontawesome-webfont.ttf');
+}
+.warp{
+  height: 1500px;
+}
+footer{
+  padding-top: 30px;
+  background-image: url('../img/pattern.png');
+}
+.foot-top{
+  padding-bottom: 40px;
+}
+.foot-logo{
+  margin-bottom: 20px;
+}
+.foot-about p{
+  font-size: 14px;
+  line-height: 26px;
+  margin-bottom: 25px;
+  font-weight: 400;
+  color: #777777;
+  
+}
+.foot-top .title{
+    margin-bottom: 22px;
+    margin-top: 35px;
+}
+.foot-top .title h2{
+  font-weight: 800;
+  color: #333333;
+  margin-bottom: 0;
+  text-transform: capitalize;
+}
+.foot-top .terms ul li{
+  padding: 0px 0px 5px 0px;
+  line-height: 26px;
+}
+.foot-top .terms li a{
+  color: #777777;
+  transition: .3s all linear;
+  font-size: 14px;
+  text-decoration: none;
+}
+.foot-top .terms li .four-items{
+  color: #777777;
+  font-size: 14px;
+}
+.foot-top .terms li .four-items .iconfont{
+  font-size: 18px;
+}
+.foot-top .terms li a:hover{
+  color: #333333;
+  margin-left: 4px;
+}
+.footer-down-cont{
+  padding: 20px 0px;
+  border-top: 1px solid  #999;
+}
+.copyright {
+  font-size: 14px;
+  color: #777777;
+  float: left;
+ }
+ .copyright p a{
+   text-decoration: none;
+   font-weight: bolder;
+   color: #777777;
+ }
+ .trams{
+   float: right;
+ }
+ .trams ul li{
+   float: left;
+   font-size: 14px;
+   padding: 0px 12px;
+ }
+ .trams ul li:last-child{
+  padding: 0px 0px 0px 12px;
+ }
+ .trams ul li a{
+  color: #999;
+  text-decoration: none;
+  transition: all 0.2s;
+ }
+ .trams ul li a:hover{
+   color: #333;
+ }
+ header{
+   position:fixed;
+   width: 100%;
+   /* background-color:transparent; */
+   z-index: 100;
+   
+ }
+ .header-two .head{
+  padding: 0px 50px;
+  background-color: #fff;
+ }
+ .head{
+   padding: 20px 50px;
+ }
+ .head-in{
+   padding-left: 15px;
+   padding-right: 15px;
+ }
+ .search input{
+  font-size: 14px;
+  border: none;
+  padding:0px 10px;
+  width: 100%;
+  height: 40px;
+  transition: all .2s;
+  background: transparent;
+  border-bottom: 1px solid rgba(0,0,0,.5);
+  position: relative;
+  /* background-color: aqua; */
+ }
+ .head-nav .nav ul{
+  margin-bottom: 0!important;
+ }
+ .head-nav .nav ul li{
+   float: right;
+   padding-right: 20px;
+ }
+ .head-nav .nav ul li:first-child{
+   padding-right: 0px;
+ }
+ .head-nav li a{
+   text-decoration: none;
+ }
+ .head-nav li span{
+   line-height: 41px;
+   text-align: center;
+   font-size: 24px;
+   color: #31333e;
+ }
+ .head-nav li span:hover{
+   color: red;
+ }
+ .search .icon-fangdajing{
+  position: absolute;
+  font-size: 28px;
+  left:95%;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #31333e;
+ }
+ .offcanvas-overlay{
+   position: fixed;
+   top: 0px;
+   width: 100vw;
+   height: 100vh;
+   background: rgba(0,0,0,0.5);
+   z-index: 101;
+   opacity: 1;
+   display: none;
+   /* transition: opacity 0.4s linear; */
+ }
+.offcanvas{
+    width: 350px;
+    height:100vh;
+    padding: 30px;
+    padding-top: 120px;
+    position: fixed;
+    top: 0px;
+    right: -350px;
+    background-color: #fff;
+    /* box-shadow: 4px 0px 30px #333333; */
+    box-shadow: none;
+    z-index: 105;
+    /* transition: right 0.2s linear; */
+}
+.offcanvas:before{
+  content: "";
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: url(../img/pattern2.png);
+  z-index: -1;
+  opacity: .5;
+}
+.offcanvas .close-btn{
+  position: absolute;
+  top: 35px;
+  right: 35px;
+  width: 45px;
+  height: 45px;
+  border: 2px solid #000000;
+  border-radius: 50%;
+  color: #000;
+  line-height: 41px;
+  text-align: center;
+  font-size: 26px;
+  cursor: pointer;
+}
+.offcanvas .open li a{
+  padding: 12px 15px!important;
+  color: #333;
+  text-transform: capitalize;
+  text-decoration: none;
+  border: 0;
+  list-style: none;
+  line-height: 1;
+  display: block;
+  position: relative;
+}
+.offcanvas .open li a:before{
+  content: '';
+  position: absolute;
+  right: 22.5px;
+  top: 18px;
+  display: block;
+  width: 0;
+  height: 0;
+  border: 4px solid transparent;
+  border-top-color: #333;
+  z-index: 99;
+}
+.header-two .head-logo,.header-two .head-nav{
+  margin-top: 22.5px; 
+ }
+.header-two .head-main >ul >li:first-child{
+  padding-left: 0px;
+}
+.head-main > ul > li:last-child {
+  padding-right: 0;
+}
+.header-two .head-main >ul >li{
+  display: inline-block;
+  padding-right: 20px;
+  padding-left: 20px;
+  position: relative;
+}
+.header-two .head-main >ul >li:before{
+  content: "";
+  display: block;
+  width: 7px;
+  height: 1px;
+  background-color: #000000;
+  position: absolute;
+  right: 0;
+  top: 50%;
+}
+.header-two .head-main >ul >li:after{
+  content: "";
+  display: block;
+  width: 1px;
+  height: 7px;
+  background-color: #000000;
+  position: absolute;
+  right: 2.8px;
+  top: 50%;
+  margin-top: -3px;
+  transition: all 0.3s linear;
+}
+.header-two .head-main >ul >li:hover::after{
+  transform: rotate(-90deg);
+  transform-origin: center;
+}
+.header-two .head-main  >ul{
+  text-align: center;
+}
+.header-two .head-main >ul >li>a{
+    text-decoration: none;
+    padding: 35px 0 35px;
+    font-size: 16px;
+    color: #333333;
+    text-transform: capitalize;
+    line-height: 1;
+    display: block;
+    position: relative;
+    font-size: 14px;
+}
+.header-two .head-main >ul >.has-sub-item>a:after{
+  content: "";
+  display:block;
+  height: 5px;
+  width: 15px;
+  position: absolute;
+  bottom: 20%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #000000;
+  transition: all 0.2s linear;
+  opacity: 0;
+}
+.header-two .head-main >ul >.has-sub-item>a:hover::after{
+  opacity: 1;
+}
+.header-two .head-main >ul >.spe-item>a::after{
+  content: "";
+  display: block;
+  height: 5px;
+  width: 15px;
+  position: absolute;
+  bottom: 20%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #000000;
+  opacity: 1;
+}
+.has-sub-item ul{
+    position: absolute;
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    transition: .2s all linear;
+    padding: 8px 0px;
+    left: 0px;
+    visibility: hidden;
+    opacity: 0;
+}
+.header-two .head-main >ul >li:hover .inside-ul{
+    visibility: visible;
+    opacity: 1;
+    left: 20px;
+}
+.has-sub-item .inside-ul li a {
+    display: block;
+    width: 210px;
+    padding: 8px 20px;
+    font-size: 12px;
+    line-height: 1.25;
+    position: relative;
+    background: #ffffff;
+    transition: all .2s;
+    color: #999999;
+    font-weight: 400;
+    text-decoration: none;
+    text-align: left;
+}
+.has-sub-item .inside-ul li a:before{
+    display: block;
+    content: "";
+    position: absolute;
+    width: 6px;
+    height: 6px;
+    left: 10px;
+    background: #000;
+    top: 50%;
+    transition: .3s all linear;
+    opacity: 0;
+    transform: translateY(-50%);
+    border-radius: 50%;
+}
+.has-sub-item .inside-ul li:hover a{ 
+    text-indent: 5px;
+}
+.has-sub-item .inside-ul li:hover a::before{
+    opacity: 1;
+    left: 15px;
+}
+.section-title-wrap{
+  margin-bottom: 60px;
+}
+.section-title{
+  display: inline-block;
+  position: relative;
+  margin-top: -9px;
+}
+.section-title h2{
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 0;
+  text-transform: uppercase;
+}
+.section-title h2 span{
+  width: 939.75px;
+  left: 68%;
+  font-weight: 700;
+  color: #333333;
+  font-size: 60px;
+  position: absolute;
+  top: 0;
+  transform: translateY(-26%);
+  opacity: .1;
+  text-transform: uppercase;
+}
+.page-title-inner{
+  background: url(../img/page-titlebg.png) center center;
+  padding: 176px 0 80px;
+}
+.list-unstyled li{
+  display: inline-block;
+}
+.list-unstyled{
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.list-unstyled li a{
+  display: inline-block;
+  color: #999999;
+  text-transform: capitalize;
+  font-size: 14px;
+  transition: .3s all linear;
+  text-decoration: none;
+}
+.list-unstyled li a:hover{
+  color: #333333;
+}
+.list-unstyled li .active{
+  color: #333;
+}
+.pt-40{
+  padding-bottom: 70px;
+  padding-top: 40px;
+}
+.pt-70{
+  padding-top: 70px;
+}
+.pt-90{
+  padding-top: 90px;
+}
+.pb-40{
+  padding-bottom: 40px;
+}
+.pb-30{
+  padding-bottom: 30px;
+}
+.pb-70{
+  padding-bottom: 70px;
+}
+.pb-60{
+  padding-bottom: 60px;
+}
+.pb-100{
+  padding-bottom: 100px;
+}
+.pt-100{
+  padding-top: 100px;
+}
+.pb-10{
+  padding-bottom: 10px;
+}
+.mb-0{
+  margin-bottom: 0px;
+}
+.btn{
+  color: #333333;
+    position: relative;
+    padding: 10px 20px 8px;
+    overflow: hidden;
+    z-index: 0;
+    font-size: 14px;
+    font-weight:700;
+    border: none;
+    outline: none;
+    border-radius: 0;
+    transition: all 0.3s linear;
+    margin-top: 1px;
+}
+.btn::before{
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background: #000000;
+  z-index: -1;
+  -webkit-transition: .3s all linear;
+  transition: .3s all linear;
+  height: 55%;
+  width:22px;
+  border-radius: 0;
+  bottom: 0;
+  opacity: .1;
+  /* -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=10)"; */
+}
+.btn:hover:before {
+  height: 100%;
+  width: 100%;
+  opacity: 1;
+}
+.btn:hover{
+  color: #fff;
+}
+.secondary-bg{
+  background-color: #fcfcfc;
+}
+.returnTop{
+  cursor: pointer;
+  width: 35px;
+  height: 35px;
+  background-color: #000;
+  position: fixed;
+  bottom: 10%;
+  right: 4%;
+  border-radius: 50%;
+  text-align: center;
+  box-shadow: 0px 5px 30px rgba(0,0,0,0.60);
+  transition: .6s all ease;
+  visibility: hidden;
+  opacity: 0;
+}
+.icon-shangjiantou{
+  color: #ffffff;
+  font-size: 24px;
+  line-height: 35px;
+  transition: .6s all ease;
+}
+.returnText{
+  width: 100px;
+  color: #000;
+  font-size: 13px;
+  font-weight: 700;
+  text-transform: uppercase;
+  position: absolute;
+  top: -65px;
+  transform: rotate(-90deg) translateX(20px);
+  left: -33px;
+  transition: .6s all ease;
+  line-height: 1;
+  opacity: 0;
+  visibility: hidden;
+}
+.returnTop:hover {
+  background-color: #fff;
+}
+.returnTop:hover .icon-shangjiantou{
+  color: #000;
+}
+.returnTop:hover .returnText{
+  top: -55px;
+  opacity: 1;
+  visibility: visible;
+}
+/* h2{
+  font-size: 28px;
+  color: #333333;
+  line-height: 1.4;
+} */
+h3{
+  font-size: 22px;
+  line-height: 32px;
+}
+h5{
+  font-size: 14px;
+}
+p {
+  line-height: 26px;
+  margin-bottom: 25px;
+  font-weight: 400;
+  color: #777777;
+}
