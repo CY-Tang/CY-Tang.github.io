@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./css/swiper.min.css">
+  <link rel="stylesheet" href="./css/iconfont.css">
+  <link rel="stylesheet" href="./css/public.css">
+  <link rel="stylesheet" href="./css/geRenIndex.css">
+</head>
+
+<body>
+  <div class="warp">
+    <a href="" class="jumpGerenCenter"></a>
+    <a href="center.html">
+      <div class="text">个人<br>中心</div>
+    </a>
+    <h1>宠物</h1>
+    <div class="main">
+      <div class="swiper-container">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="delete">&nbsp;删除</div>
+            <h5>冰雹</h5>
+            <a href="petsIndex.html">
+              <div class="pet-pic">
+                <img src="./img/pets2.jpg" alt="">
+              </div>
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <div class="delete">&nbsp;删除</div>
+            <h5>阿喵</h5>
+            <a href="#">
+              <div class="pet-pic">
+                <img src="./img/pets3.jpg" alt="">
+              </div>
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <h5>旺财</h5>
+            <div class="delete">&nbsp;删除</div>
+            <a href="#">
+              <div class="pet-pic">
+                <img src="./img/pets4.jpg" alt="">
+              </div>
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="addPets.html" class="add">+</a>
+          </div>
+        </div>
+      </div>
+      <div class="tip">
+        <span class="iconfont icon-Group"></span>
+        <p>点击进入宠物界面</p>
+      </div>
+    </div>
+    <footer>
+      <div class="foot foot-left">
+        <div class="icon">
+          <span class="iconfont icon-pets" style="color: red;"></span>
+        </div>
+        <div class="word">萌宠</div>
+      </div>
+      <div class="foot foot-center">
+        <div class="icon">
+          <span class="iconfont icon-wenzhang1"></span>
+        </div>
+        <div class="word">科普</div>
+      </div>
+      <div class="foot foot-right">
+        <div class="icon">
+          <span class="iconfont icon-fangdajing_huaban1"></span>
+        </div>
+        <div class="word">发现</div>
+      </div>
+    </footer>
+  </div>
+  <script src="./js/swiper.min.js"></script>
+  <script src="./plugins/jquery/jquery.min.js"></script>
+  <script language="javascript">
+    var mySwiper = new Swiper('.swiper-container', {
+      effect: 'coverflow',
+      slidesPerView: 2,
+      centeredSlides: true,
+      coverflow: {
+        rotate: 30,
+        stretch: 10,
+        depth: 60,
+        modifier: 2,
+        slideShadows: true
+      }
+    })
+  </script>
+  <script>
+    $('.foot-center').click(function () {
+      window.location.href = 'kepu.html';
+    })
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,47 @@
+.warp{
+  padding-top: 100px;
+}
+.head{
+  width: 100px;
+  height: 100px;
+  background-color: blanchedalmond;
+  overflow: hidden;
+  border-radius: 50%;
+  margin: 0 auto;
+}
+.head img{
+  display: block;
+  width: 100%;
+}
+h1{
+  text-align: center;
+  padding: 20px 10px;
+}
+.form-group{
+  position: relative;
+}
+.main{
+  padding-top: 2.625rem;
+  width: 65%;
+  margin: 0 auto;
+}
+button{
+  margin: 0 auto;
+}
+.foot{
+  padding: 10px 50px;
+}
+.foot a{
+  color: #000;
+  font-size: .85rem;
+}
+.register{
+  float: left;
+  margin-left: 3.925rem;
+ 
+}
+.forget{
+  float: right;
+  margin-right: 3.925rem;
+  
+}

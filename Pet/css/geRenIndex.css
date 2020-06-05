@@ -1,0 +1,114 @@
+.warp{
+  overflow: hidden;
+  position: relative;
+}
+.jumpGerenCenter{
+  display: block;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  background-color: blanchedalmond;
+  position: absolute;
+  top: -12.25rem;
+  right: -12.25rem;
+  z-index: -1;
+}
+.text{
+  width: 60px;
+  height: 60px;
+  font-size: 18px;
+  font-weight: bolder;
+  float: right;
+  margin-right:-10px;
+  margin-top: 5px;
+}
+h1{
+  margin-top: 100px;
+  text-align: center;
+}
+.foot{
+  width: 33.333%;
+  height: 50px;
+  border-top: 1px solid #ccc;
+  float: left;
+}
+footer{
+  position: absolute;
+  width: 100%;
+  bottom: 0px;
+  left: 0px;
+}
+.iconfont{
+  text-align: center;
+  display: block;
+  font-size: 28px;
+  margin-top: 2px;
+}
+.word{
+  text-align: center;
+  font-size: 12px;
+  margin-top: -3px;
+}
+.foot-left{
+  color: red;
+}
+.main{
+  width: 100%;
+  margin-top: 80px;
+}
+.swiper-container {
+  width: 80%;
+  height: 230px;
+}  
+.pet-pic{
+  width: 100%;
+  margin-top: 30px;
+}
+.pet-pic img{
+  display: block;
+  width: 100%;
+}
+.swiper-slide{
+  background-color: blanchedalmond;
+  overflow: hidden;
+}
+.delete{
+  position: absolute;
+  right: -30px;
+  top: -30px;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: blueviolet;
+  line-height: 80px;
+  text-align: left;
+  font-size: 12px;
+  color: aliceblue;
+}
+h5{
+  text-align: center;
+  margin-top: 40px;
+}
+.swiper-slide .add{
+  display: block;
+  width: 100%;
+  height: 100%;
+  line-height: 229px;
+  text-align: center;
+  font-size: 50px;
+  font-weight: bold;
+  text-decoration: none;
+  color: black;
+}
+.icon-Group{
+  transform: rotate(180deg);
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+.tip{
+  margin-top: 10px;
+}
+.tip{
+  text-align: center;
+  font-size: 12px;
+}
