@@ -28,20 +28,21 @@ h1{
 button{
   margin: 0 auto;
 }
-.foot{
+.Foot{
   padding: 10px 50px;
 }
-.foot a{
+.Foot a{
   color: #000;
   font-size: .85rem;
 }
 .register{
   float: left;
   margin-left: 3.925rem;
- 
 }
 .forget{
   float: right;
   margin-right: 3.925rem;
-  
+}
+footer{
+  bottom: 15%;
 }
