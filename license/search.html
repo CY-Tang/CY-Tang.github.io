@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./css/iconfont.css">
+  <link rel="stylesheet" href="./css/index.css">
+  <link rel="stylesheet" href="./css/public.css">
+  <link rel="stylesheet" href="./css/search.css">
+</head>
+
+<body>
+  <div class="warp">
+    <a href="index.html" style="color: #000; text-decoration: none;">
+      <div class="top" style="padding-top: 10px; padding-left: 10px;padding-bottom: 10px;
+      border-bottom: 1px solid #ccc;">
+        <span class="iconfont icon-lunbozuofangun">返回</span>
+      </div>
+    </a>
+    <div class="oneSearch" style="position: relative; width: 100%; margin-top: 130px;">
+      <input type="text"
+        style="display: block; margin: 0 auto;margin-top:10px;width: 80%;height: 30px;background-color: transparent;border: 1px solid #000;border-radius: 0px; text-indent: 20%;"
+        placeholder="请输入姓名">
+      <span class="iconfont icon-fangdajing_huaban1"
+        style="font-size:30px ; position: absolute; top: 0%;left: 14%;"></span>
+      <a href="#" class="login rep">点 击 查 询 姓 名 是 否 重 复</a>
+
+    </div>
+    <div class="twoSearch" style="position: relative; width: 100%; margin-top: 50px;">
+      <input type="text"
+        style="display: block; margin: 0 auto;margin-top:10px;width: 80%;height: 30px;background-color: transparent;border: 1px solid #000;border-radius: 0px; text-indent: 20%;"
+        placeholder="请输入经营行业">
+      <span class="iconfont icon-fangdajing_huaban1"
+        style="font-size:30px ; position: absolute; top: 0%;left: 14%;"></span>
+      <a href="table.html" class="login">点 击 查 询 需 要 的 材 料</a>
+
+    </div>
+  </div>
+</body>
+<script src="./plugins/jquery/jquery.min.js"></script>
+<script>
+  $('.rep').click(function () {
+    alert('名字已重复')
+  })
+</script>
+
+</html>

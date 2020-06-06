@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./css/index.css">
+</head>
+
+<body>
+  <div class="warp" style="padding-top: 200px; position: relative;">
+    <p class="wel" style="font-size: 34px;text-align: center;">Welcome</p>
+    <a href="#" class="click"
+      style="display: block;width: 50%;height: 30px;border: 1px solid #000;text-align: center;text-decoration: none;border-radius: 15px;margin: 0 auto;line-height: 28px;margin-top: 200px;color: #000;font-size: 14px;">点
+      击 登 录</a>
+    <div class="dengLu" style="display: none;">
+      <div class="main">
+        <p style="text-align: center;font-size: 30px; color: #fff;">Welcome</p>
+        <input type="text" placeholder="身 份 证 号">
+        <input type="password" placeholder="密 码">
+        <a href="search.html" class="login">点 击 办 理</a>
+        <div class="zhuce"
+          style="float:left;width:48%;text-align: center;color: #fff;font-size: 12px;line-height: 30px;margin-top: 20px;">
+          注册
+        </div>
+        <div class="line" style="float:left;width: 1px;height: 20px;background-color:#fff;margin-top: 25px;"></div>
+        <div class="forget"
+          style="float:left;width:50%;text-align: center;color: #fff;font-size: 12px;line-height: 30px;margin-top: 20px;">
+          忘记密码</div>
+      </div>
+    </div>
+  </div>
+</body>
+<script src="./plugins/jquery/jquery.min.js"></script>
+<script>
+  $('.click').click(function () {
+    $('.dengLu').css("display", 'block')
+    $('.wel').css('display', 'none')
+    $('.click').css('display', 'none')
+  })
+  $('.dengLu').click(function (e) {
+    console.log(e)
+    console.log(e.target)
+    if (e.target.className === 'dengLu') {
+      $(this).css('display', 'none')
+      $('.wel').css('display', 'block')
+      $('.click').css('display', 'block')
+    }
+  })
+  $('input').click(function () {
+    $('input').css('border', '1px solid #fff')
+    $(this).css('border', '1px solid #000')
+  })
+
+</script>
+
+</html>

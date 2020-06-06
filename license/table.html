@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./css/iconfont.css">
+  <link rel="stylesheet" href="./css/index.css">
+  <link rel="stylesheet" href="./css/public.css">
+  <link rel="stylesheet" href="./css/search.css">
+</head>
+
+<body>
+  <div class="warp" style="position: relative;">
+
+    <a href="search.html" style="color: #000; text-decoration: none;">
+      <div class="top" style="padding-top: 10px; padding-left: 10px;padding-bottom: 10px;
+      border-bottom: 1px solid #ccc;">
+        <span class="iconfont icon-lunbozuofangun">返回</span>
+      </div>
+    </a>
+    <table style="margin:0 auto;border-collapse:collapse; width: 65%;margin-top: 70px; font-size: 14px;">
+      <thead>
+        <tr>
+          <th style="padding-bottom: 5px;">办理所需的材料</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><a href="#">组件负责人签署的文件</a></td>
+        </tr>
+        <tr>
+          <td><a href="#" class="ZC">组织章程</a></td>
+        </tr>
+        <tr>
+          <td><a href="#">审批机关的批准文件</a></td>
+        </tr>
+        <tr>
+          <td><a href="#">营业场所使用证明</a></td>
+        </tr>
+      </tbody>
+    </table>
+    <table style="margin:0 auto;border-collapse:collapse; width: 65%;margin-top: 70px; font-size: 14px;">
+      <thead>
+        <tr>
+          <th style="padding-bottom: 5px;">我提交的材料</th>
+          <th style="padding-bottom: 5px;">浏览</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>组件负责...文件</td>
+          <td><button>打开</button></td>
+        </tr>
+        <tr>
+          <td style="color: red;">尚未提交</td>
+          <td><button>打开</button></td>
+        </tr>
+        <tr>
+          <td>审批...文件</td>
+          <td><button>打开</button></td>
+        </tr>
+        <tr>
+          <td>营业...证明</td>
+          <td><button>打开</button></td>
+        </tr>
+      </tbody>
+    </table>
+    <div class="btn baocun" style="margin-left: 20%;margin-top: 50px;">保存</div>
+    <div class="btn tijiao" style="margin-left: 20%;margin-top: 50px;">提交</div>
+    <div class="zhezhao"
+      style="width: 100%;height:100vh;background-color:rgba(0, 0, 0, 0.66); position: absolute; top: 0px; display: none;">
+      <div class="tip"
+        style="width: 80%;height: 180px;background-color: #fff;text-align: center; line-height: 180px; margin: 0 auto;margin-top: 40%;border-radius: 5px;">
+        前方还有 <span class="num"></span> 人正在排队...
+      </div>
+      <div class="erweima"
+        style="display: none; width: 80%;height: 350px;background-color: #fff;text-align: center;margin: 0 auto;margin-top: 35%; border-radius: 5px;">
+        <p style="font-size: 14px;line-height: 30px; padding: 20px 20px;">提交材料完全正确凭此二维码与身份证在当地市场监督管理局领取营业执照</p>
+        <img src="./img/erweima.png" alt="" style="display: block;width: 60%;margin: 0 auto;border: 1px solid #000;">
+        <div class="btn back"
+          style="margin-left: 20%;margin-top: 20px;width: 60%; border-radius: 20px; border: 2px solid #000;line-height: 28px;">
+          返回</div>
+      </div>
+
+    </div>
+    <div class="zuzhi"
+      style="width: 100%;height:100vh;background-color:rgba(0, 0, 0, 0.66); position: absolute; top: 0px; display: none;">
+      <div>
+        <img src="./img/timg (1).jpg" alt="" style="display: block;width: 80%;margin: 0 auto; margin-top: 20%;">
+      </div>
+    </div>
+  </div>
+</body>
+<script src="./plugins/jquery/jquery.min.js"></script>
+<script>
+  $('.baocun').click(function () {
+    alert('保存成功')
+  })
+  let num = 5;
+  $('.num').text(num)
+  $('.tijiao').click(function () {
+    setTimeout(function () {
+      $('.zhezhao').css('display', 'block');
+      let a = setInterval(function () {
+        num--;
+        $('.num').text(num)
+        if (num === 0) {
+          clearInterval(a)
+          $('.tip').css('display', 'none')
+          $('.erweima').css('display', 'block')
+        }
+      }, 1000)
+    }, 500);
+  })
+  $('.back').click(function () {
+    $('.zhezhao').css('display', 'none')
+  })
+  $('.ZC').click(function () {
+    $('.zuzhi').css('display', 'block')
+  })
+  $('.zuzhi').click(function (e) {
+    console.log(e.target.className)
+    if (e.target.className === 'zuzhi') {
+      $('.zuzhi').css('display', 'none')
+    }
+  })
+</script>
+
+</html>
