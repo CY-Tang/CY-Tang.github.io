@@ -10,6 +10,9 @@
 
 <body>
   <div class="warp" style="padding-top: 200px; position: relative;">
+    <div class="zhezhao"
+      style="width: 100%;height:100vh;position: absolute;top: 0px;background-color: #f9fbf9b3;z-index: -1;">
+    </div>
     <p class="wel" style="font-size: 34px;text-align: center;">Welcome</p>
     <a href="#" class="click"
       style="display: block;width: 50%;height: 30px;border: 1px solid #000;text-align: center;text-decoration: none;border-radius: 15px;margin: 0 auto;line-height: 28px;margin-top: 200px;color: #000;font-size: 14px;">点
@@ -40,8 +43,6 @@
     $('.click').css('display', 'none')
   })
   $('.dengLu').click(function (e) {
-    console.log(e)
-    console.log(e.target)
     if (e.target.className === 'dengLu') {
       $(this).css('display', 'none')
       $('.wel').css('display', 'block')

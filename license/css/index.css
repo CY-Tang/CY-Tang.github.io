@@ -14,12 +14,12 @@ body{
 .warp{
   width: 100%;
   height: 100vh;
-  background-color: #f9fbf9b3;
+  /* background-color: #f9fbf9b3; */
 }
 .dengLu{
   width: 100%;
   height: 100vh;
-  background-color: #00000038;
+  background-color: #0000009c;
   position: absolute;
   top: 0;
 }
