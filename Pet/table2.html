@@ -34,11 +34,11 @@
       </div>
     </div>
     <div class="top">
-      <a href="petsIndex.html">
+      <a href="petsTwo.html">
         <span class="iconfont icon-lunbozuofangun
       "></span>
       </a>
-      <span class="title">冰雹</span>
+      <span class="title">阿喵</span>
       <span class="add">+</span>
       <div class="clear"></div>
 
@@ -54,72 +54,77 @@
           <div class="clear"></div>
         </ul>
       </div>
-      <div class="zhexian" style="display: block;">
+      <!-- <div class="zhexian" style="display: block;"> -->
+      <div class="history">
+        <h5 style="text-align: center;margin-top: 50px; color: darkviolet;">没有体重记录~</h5>
+        <div class="pic" style="margin-top: 100px;">
+          <img src="./img/kong.jpg" alt="">
+        </div>
+      </div>
 
-      </div>
     </div>
+  </div>
 
-    <div class="history" style="display: block;">
-      <!-- 历史体重 -->
-      <div class="tab" style="margin-top: 20px;">
-        <div class="Tab jin">斤</div>
-        <div class="Tab kg">Kg</div>
-      </div>
-      <div class="clear"></div>
-      <div class="card">
-        <span class="">2020-5-22</span>
-        <span style="float:right">11.0kg</span>
-      </div>
-      <div class="card">
-        <span class="">2020-5-21</span>
-        <span style="float:right">13.0kg</span>
-      </div>
-      <div class="card">
-        <span class="">2020-5-20</span>
-        <span style="float:right">10.0kg</span>
-      </div>
-      <h5 style="color: blueviolet; text-align: center;font-size: 12px;margin-top: 10px;">没有更多了~</h5>
+  <!-- <div class="history" style="display: block;">
+    <div class="tab" style="margin-top: 20px;">
+      <div class="Tab jin">斤</div>
+      <div class="Tab kg">Kg</div>
     </div>
-    <div class="Healthy" style="display: none;">
-      <div class="hea zongJie">
-        <p>情况总结:</p>
-        <ul style="margin-left: 50px;">
-          <li>你的宠物身体状况良好</li>
-          <li>体重:20kg</li>
-          <li>出现异常:无</li>
-        </ul>
-      </div>
-      <div class="hea jianyi">
-        <p>提醒建议:</p>
-        <ul style="margin-left: 50px;">
-          <li>宠物出现软边的情况可能是。。。</li>
-          <li>提醒定期驱虫</li>
-        </ul>
-      </div>
+    <div class="clear"></div>
+    <div class="card">
+      <span class="">2020-5-22</span>
+      <span style="float:right">11.0kg</span>
     </div>
+    <div class="card">
+      <span class="">2020-5-21</span>
+      <span style="float:right">13.0kg</span>
+    </div>
+    <div class="card">
+      <span class="">2020-5-20</span>
+      <span style="float:right">10.0kg</span>
+    </div>
+    <h5 style="color: blueviolet; text-align: center;font-size: 12px;margin-top: 10px;">没有更多了~</h5>
+  </div> -->
+  <div class="Healthy" style="display: none;">
+    <div class="hea zongJie">
+      <p>情况总结:</p>
+      <ul style="margin-left: 50px;">
+        <li>你的宠物身体状况良好</li>
+        <li>体重:20kg</li>
+        <li>出现异常:无</li>
+      </ul>
+    </div>
+    <div class="hea jianyi">
+      <p>提醒建议:</p>
+      <ul style="margin-left: 50px;">
+        <li>宠物出现软边的情况可能是。。。</li>
+        <li>提醒定期驱虫</li>
+      </ul>
+    </div>
+  </div>
   </div>
   <script src="./plugins/echart/echarts.min.js"></script>
   <script src="./plugins/jquery/jquery.min.js"></script>
   <script>
-    (function () {
-      var myChart = echarts.init(document.querySelector('.zhexian'));
+    // (function () {
+    //   var myChart = echarts.init(document.querySelector('.zhexian'));
 
-      option = {
-        xAxis: {
-          type: 'category',
-          data: ['5.20', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun']
-        },
-        yAxis: {
-          type: 'value'
-        },
-        series: [{
-          data: [10, 13, 11],
-          type: 'line'
-        }]
-      };
-      // 使用刚指定的配置项和数据显示图表。
-      myChart.setOption(option);
-    })()
+    //   option = {
+    //     xAxis: {
+    //       type: 'category',
+    //       data: ['5.20', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun']
+    //     },
+    //     yAxis: {
+    //       type: 'value'
+    //     },
+    //     series: [{
+    //       data: [10, 13, 11],
+    //       type: 'line'
+    //     }]
+    //   };
+    //   // 使用刚指定的配置项和数据显示图表。
+    //   myChart.setOption(option);
+    // })()
 
   </script>
   <script>
